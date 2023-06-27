@@ -1,4 +1,4 @@
-# heartbeat_detector_TFG
+# Heartbeat_Detector_TFG
 This repository contains the code and documentation related to my Final Degree Project on beat detection with neural networks.
 
 ## Introduction
