@@ -90,10 +90,7 @@ def model_build_func(input_shape, kernel_conv=7, strides_conv=1, dilation_rate=2
     classif = Dropout(0.3)(classif)
 
     classif = Dense(128, activation="elu")(classif)
-    classif = LayerNormalization(-2)(classif)
 
-    classif = BatchNormalization()(classif)
-    classif = Dropout(0.3)(classif)
     classif = Dense(6, activation="softmax")(classif)
     model = tf.keras.Model(inputs=inputs, outputs=classif)
     model.compile(optimizer="adam", loss="categorical_crossentropy")
